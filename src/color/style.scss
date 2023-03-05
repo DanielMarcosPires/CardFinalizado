@@ -1,0 +1,38 @@
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+input[type="number"]{
+    border: none;
+    border-bottom: solid 1px #000;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    width: 50px;
+}
+
+.input[type=number] {
+    -moz-appearance: textfield;
+  }
+  
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+:root{
+    --vermelho:hsl(0, 100%, 67%);
+    --laranjaAvermelhado:hsl(39, 100%, 56%);
+    --verde:hsl(166, 100%, 37%);
+    --azulCobalto:hsl(234, 85%, 45%);
+
+    /*Gradients*/
+    --slateBlue: hsl(252, 100%, 67%);
+    --royalBlue: hsl(241,81%,54%);
+    /*Gradient circular*/
+    --azulVioleta:  hsla(256, 72%, 46%, 1);
+    --azulPersia: hsla(241, 72%, 46%, 0);
+
+    --botao:#303b59;
+}

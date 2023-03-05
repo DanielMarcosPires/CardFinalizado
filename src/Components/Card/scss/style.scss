@@ -1,0 +1,92 @@
+@mixin resetButton(){
+    outline: none;
+    border: none;
+}
+.Card{
+    display: grid;
+    grid-template: 
+    'c1 c2'
+    'c1 c2'
+    /1fr 1fr
+    ;
+    box-shadow: 0 0 4px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 500px;
+}
+.CardLeftBar{
+    background: linear-gradient(var(--slateBlue),var(--royalBlue));
+    grid-area: c1;
+    color: #fff;
+    padding: 0 16px;
+}
+.CardLeftBar div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(var(--azulVioleta),var(--azulPersia));
+    box-shadow: 0 0 4px var(--azulVioleta),0 0 4px var(--azulPersia);
+    border-radius: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    height: 80px;
+    width: 80px;
+}
+.CardValueNow{
+    margin: 0;
+    font-size: 30px;
+}
+.CardItem{
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    margin: 8px 0;
+}
+.CardItem:hover{
+    box-shadow: 0 0 2px #000;
+}
+.CardItem div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.CardItem span{
+    color: #000000a4;
+}
+.CardRightBar{
+    grid-area: c2
+}
+.CardRightBarButton{
+    @include resetButton();
+    background: var(--botao);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 8px;
+    width: 100%;
+}
+@media screen and (max-width:450px){
+    .Card{
+        display: grid;
+        grid-template: 
+        'c1 c1'
+        'c2 c2'
+        /1fr 1fr
+        ;
+        box-shadow: 0 0 4px #000;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 500px;
+    }
+    .CardLeftBar{
+        background: linear-gradient(var(--slateBlue),var(--royalBlue));
+        color: #fff;
+        padding: 0 16px;
+    }
+     }
+.CardMargin{
+    margin: 0 auto;
+    padding: 8px 0;
+    width: 90%;
+}
